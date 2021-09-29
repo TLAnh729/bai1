@@ -1,0 +1,26 @@
+﻿.content {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 30px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.form_dangki div {
+    margin-bottom: 15px;
+}
+
+label {
+    width: 120px;
+}
+
+.btn_DangKi button {
+    float: right;
+}

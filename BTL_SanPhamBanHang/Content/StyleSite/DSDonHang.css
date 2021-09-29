@@ -1,0 +1,26 @@
+﻿body {
+    padding-top: 70px;
+    margin-top: 0px;
+}
+
+.content {
+    width: 80%;
+    /*min-height: calc(100%-396px);*/
+    height: auto;
+    margin: auto;
+}
+.ThongTinKhachHang {
+    width: 50%;
+    float: left;
+}
+.ThongTinSanPham {
+    width: 50%;
+    float: left;
+}
+.footer {
+    width: 100%;
+    height: 320px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}

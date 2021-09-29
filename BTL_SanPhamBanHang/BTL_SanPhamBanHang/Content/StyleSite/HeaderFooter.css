@@ -1,0 +1,148 @@
+﻿/* =========HEADER========== */
+.header {
+    width: 100%;
+    height: 76px;
+    background: #0B2239;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.class_logo {
+    width: 15%;
+    float: left;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+}
+
+.class_menu {
+    width: 35%;
+}
+
+    .class_menu a, .class_account a {
+        margin-right: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+.class_search {
+    width: 25%;
+}
+
+.example input {
+    font-size: 20px;
+    border: 1px solid;
+    float: left;
+}
+
+.example button {
+    background: #0B2239;
+    color: white;
+    font-size: 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.class_giohang {
+    width: 10%;
+}
+
+.img_giohang {
+    width: 25%;
+    float: right;
+}
+
+.class_account {
+    width: 15%;
+}
+
+#dangnhap, #dangky {
+    float: right;
+}
+
+/* DÙNG CHUNG (BODY) */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    min-height: calc(100% - 396px);
+    padding-top: 20px;
+}
+
+body {
+    margin-top: 76px
+}
+
+/* =========FOOTER========== */
+.footer {
+    width: 100%;
+    height: 320px;
+    color: #fff;
+}
+
+.information {
+    width: 100%;
+    height: 244px;
+    background: black;
+}
+
+.logo_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sanpham {
+    width: 33%;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+}
+    .sanpham a{
+        color:white;
+    }
+    .diachi {
+        width: 33%;
+        float: left;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .diachi p {
+        margin: 0;
+    }
+
+.lienhe {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.copyright {
+    height: 76px;
+    background-color: #0B2239;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .copyright p {
+        margin: 0;
+    }

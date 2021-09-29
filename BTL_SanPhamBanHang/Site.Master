@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BTL_SanPhamBanHang.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/StyleSite/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/StyleSite/HeaderFooter.css" rel="stylesheet" />
+</head>
+<body>
+    <%-- Header--%>
+    <form runat="server">
+
+        <div class="header">
+            <div class="class_logo">
+                <a href="Default.aspx">
+                    <img class="logo" src="Content/Images/icons/logo_2.png" />
+                </a>
+            </div>
+            <div class="class_menu">
+                <a runat="server" href="~/About">Giới thiệu</a>
+                <a runat="server" href="LoaiHang.aspx?loai=1">NIKE</a>
+                <a runat="server" href="LoaiHang.aspx?loai=2">VALENTINO</a>
+                <a runat="server" href="LoaiHang.aspx?loai=3">LACOSTE</a>
+                <%--<asp:Repeater ID="rptMenu" runat="server">
+                <ItemTemplate>
+                    <a href="LoaiHang.aspx?loai=<%#Eval("ID") %>"><%#Eval("TenLoaiHang") %></a>
+                </ItemTemplate>
+            </asp:Repeater>--%>
+            </div>
+            <div class="class_search">
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:Button ID="Button1" runat="server" Text="Tìm kiếm" OnClick="Button1_Click" />
+                <%--<input type="text" placeholder="Tìm kiếm..." name="search2" autocomplete="off">
+            <button type="submit"><i class="fa fa-search"></i></button>--%>
+            </div>
+            <div class="class_giohang">
+                <a href="DatHang.aspx" id="giohang">
+                    <img src="Content/Images/icons/full-shopping-cart.svg" class="img_giohang" />
+                </a>
+            </div>
+            <div class="class_account">
+                <a href="DangNhap.aspx" id="dangnhap">Đăng nhập</a>
+                <a href="DangKi.aspx" id="dangky">Đăng ký</a>
+            </div>
+        </div>
+        <%-- Content --%>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <%-- Footer--%>
+        <div class="footer">
+            <div class="information">
+                <div class="logo_footer">
+                    <img class="logo" src="Content/Images/icons/logo_2.png" />
+                </div>
+                <div class="sanpham">
+                    <div><a href="#" id="nike_footer">NIKE</a></div>
+                    <div><a href="#" id="valentino_footer">VALENTINO</a></div>
+                    <div><a href="#" id="lacoste_footer">LACOSTE</a></div>
+                </div>
+                <div class="diachi">
+                    <p>Chi nhánh 1: 96 - Định Công - Hà Nội</p>
+                    <br />
+                    <p>Chi nhánh 2: 20 - Đống Đa - Hà Nội</p>
+                    <br />
+                    <p>Chi nhánh 3: 73 - Hoàn Kiếm - Hà Nội</p>
+                </div>
+                <div class="lienhe">
+                    <p>Số điện thoại: 0971973954</p>
+                    <p>Email: runningshoes@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>2021 RUNNING SHOES VIET NAM.ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

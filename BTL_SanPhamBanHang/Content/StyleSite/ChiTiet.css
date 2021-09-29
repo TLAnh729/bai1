@@ -1,0 +1,93 @@
+﻿.content {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.ThemHang {
+    min-height: 270px;
+}
+/*Ảnh sản phẩm*/
+.img_themgiay {
+    width: 40%;
+    float: left;
+    background-color: #eeeeeeee;
+    padding: 50px 20px;
+    text-align: center;
+    margin-right: 10%;
+}
+
+    .img_themgiay img {
+        width: 60%;
+    }
+/*Thông tin*/
+.text_themgiay {
+    width: 50%;
+    float: left;
+}
+
+    .text_themgiay h3 {
+        margin-top: 0;
+    }
+
+    .text_themgiay h2 {
+        margin: 20px 0;
+    }
+
+.size_giay {
+    display: flex;
+    align-items: baseline; /*Hiển thị label bằng với button size*/
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+label {
+    width: 110px;
+    color: #757575;
+    font-weight: unset;
+}
+
+.size_giay button {
+    margin-right: 15px;
+}
+
+.soluong {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+    .soluong p {
+        margin: 0 10px;
+    }
+    .soluong input {
+        width: 50%;
+    }
+
+.btn_themhang input[type="submit"] {
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    background-color: #0B2239;
+    color: white;
+    outline: none;
+}
+/*Thông tin chi tiết*/
+.ThongTin {
+    margin-bottom: 35px;
+}
+.ThongTin_ChiTiet{
+    display:flex;
+    margin-bottom:20px;
+}
+.ThongTin_ChiTiet label {
+    width: 165px;
+}
+/*Mô tả sản phẩm*/
+.MoTa {
+    margin-bottom: 40px;
+}
+.MoTa div{
+    margin-bottom:10px;
+}

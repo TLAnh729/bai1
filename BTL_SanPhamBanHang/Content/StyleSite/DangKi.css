@@ -1,0 +1,26 @@
+﻿body {
+    margin: 0;
+    padding-top: 60px;
+}
+.content {
+    margin: auto;
+    width: 80%;
+    height:600px;
+}
+.form_dangki {
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+}
+.form_dangki div {
+    margin-bottom: 15px;
+}
+label {
+    width: 110px;
+}
+button{
+    float:right;
+}
+.footer {
+    position: absolute;
+}

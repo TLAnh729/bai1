@@ -1,0 +1,81 @@
+﻿.content {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 30px;
+    min-height: 500px;
+}
+body{
+    height: auto;
+}
+
+h3 {
+    margin-bottom: 35px;
+}
+/*-----------Giỏ hàng------------*/
+.GioHang {
+    width: 65%;
+    float: left;
+}
+
+.img_giay {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    padding: 20px 0px 30px 20px;
+    background-color: #eeeeeeee;
+}
+
+    .img_giay img {
+        width: 85%;
+    }
+
+.thongtin_giay {
+    width: 60%;
+    float: left;
+}
+
+    .thongtin_giay p {
+        margin-bottom: 30px;
+    }
+
+    .thongtin_giay a {
+        margin-right: 20px;
+        color: black;
+    }
+
+h4 {
+    margin-top: 0;
+}
+/*-----------Đơn hàng-----------*/
+.DonHang {
+    width: 35%;
+    float: left;
+}
+
+    .DonHang div, .tongtien {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+        .tongtien{
+            padding-left: 65%;
+        }
+
+        .btnDatHang {
+            width: 100%;
+            height: 35px;
+            border: none;
+            border-radius: 20px;
+            background-color: #0B2239;
+            color: white;
+            float: right;
+        }
+.dathang {
+    padding-left: 50%;
+    height: 50px;
+}
+
+hr {
+    border: 1px solid #eeeeeeee;
+}
